@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 60%;
+}
+
+body {
+    background-color: rgb(219, 230, 253);
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    place-items: center;
+}
+
+input {
+    padding: 1rem;
+    min-width: 40rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border: none;
+    border-bottom: 0.2rem solid #15133c;
+    outline: none;
+    margin-bottom: 32px;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: rgb(219, 230, 253);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0;
+    border-radius: 0.5rem;
+    color: #15133c;
+    position: relative;
+}
+
+.form-div> :first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 16px;
+    background: #000000c7;
+    color: white;
+    padding: 6px 9px;
+}
+
+.form-div>img {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 2rem;
+    color: rgb(29 28 30);
+    border: 1px solid #00000021;
+    padding: 4px;
+    border-radius: 8px;
+
+}
+
+/* Media queries  */
+
+@media (max-width: 400px) {
+    html {
+        font-size: 56%;
+    }
+
+    input {
+        min-width: 30rem;
+    }
+
+}
